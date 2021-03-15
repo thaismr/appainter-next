@@ -1,6 +1,9 @@
 import Head from 'next/head'
 import styles from '../styles/Home.module.css'
 
+import Link from 'next/link'
+
+
 export default function Home() {
   return (
     <div className={styles.container}>
@@ -8,6 +11,22 @@ export default function Home() {
         <title>Create Next App</title>
         <link rel="icon" href="/favicon.ico" />
       </Head>
+
+      <ul>
+        <li>
+          <Link href="/posts/1">
+            <a>Go to post 1</a>
+          </Link>
+        </li><li>
+          <Link href="/posts/2">
+            <a>Go to post 2</a>
+          </Link>
+        </li><li>
+          <Link href="/about">
+            <a>About</a>
+          </Link>
+        </li>
+      </ul>
 
       <main className={styles.main}>
         <h1 className={styles.title}>
